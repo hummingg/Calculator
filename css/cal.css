@@ -1,0 +1,50 @@
+*{
+		margin:0;padding:0;font-size:15px;font-weight: 550;
+	}
+	
+	div{
+		/*border:1px solid red;*/
+	}
+	/*button{
+		border:1px solid red;
+	}*/
+	#nav_content{
+		margin:0 0 50px 50px; display:inline-block;vertical-align:top;
+	}
+	#calbody{
+		width:400px;background-color:skyblue;display:inline-block;border-radius:50px 50px;vertical-align:top;
+	}
+	#nav{
+		width:30px;
+		height:30px;
+	}
+	#screen{
+		width:80%;margin:0 auto;
+	}
+	#expression{
+		width:100%;border:0;margin:0;text-align:left;
+	}
+	#result{
+		width:100%;border:0;margin:0;text-align:right;
+	}
+	#science {
+		width:80%;height:140px;margin:25px auto 0;
+	}
+	#adult{
+		width:80%;height:90px;margin:25px auto 0;
+	}
+	#child{
+		width:80%;height:40px;margin:25px auto 0;
+	}
+	#common{
+		width:80%;margin:0 auto;
+	}
+	.key{
+		width:18%;margin:0 auto;
+	}
+	#nav_content li{
+		list-style: none;border:0px solid red;padding: 0;letter-spacing:5px;padding:10px;
+	}
+	#shw_scn,#shw_adt,#shw_chd{
+		letter-spacing:5px;padding:10px 20px;margin:5px 5px;border-radius: 100px 10px;
+	}

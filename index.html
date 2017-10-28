@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+
+	<script type="text/javascript" src="js/jquery.js" ></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<link rel="stylesheet" href="css/jquery-ui.css" type="text/css" />
+	<link rel="stylesheet" href="css/cal.css" type="text/css" />
+	<title>宜+计算器</title>
+	<script type="text/javascript" src="js/function.js" ></script>
+	<script type="text/javascript" src="js/onload.js" ></script>
+	<script type="text/javascript">
+
+	</script>
+
+	<style>
+		body{
+			background-image:url('img/bj_xingkong.jpg');
+			background-repeat:no-repeat;
+			-moz-background-size:cover;
+	    	-webkit-background-size:cover;
+	    	-o-background-size:cover;
+			background-size:cover;
+
+		}
+		#calbody{
+			/*background-image:url('img/bj_coffee.jpg');*/
+			/*filter:alpha(opacity=50);
+			opacity:.5;*/
+			background-color:rgba(0, 0, 0, 0.4);
+		}
+	</style>
+</head>
+<body align="center" style="display:none;">
+	<!--弹幕-->
+	<marquee id="koujue">koujue</marquee>
+	<marquee>
+		<div style='width:72px;height:74px;font-size:70px;color:#FFFF44;'>π</div>
+	</marquee>
+
+	<div style="text-align:center;margin-top:30px;">
+		<!--切换模式-->
+		<div id="nav_content" style="display:none;">
+			<button id="shw_scn" delay="false"><b>科学</b></button><br/>
+			<button id="shw_adt" delay="false"><b>家长</b></button><br/>
+			<button id="shw_chd" delay="false"><b>儿童</b></button><br/>
+		</div> 
+
+		<div id="calbody" style="">
+			<div id="nav">
+				<img src='img/nav.jpg'  onclick="javascript:$('#nav_content').toggle('slow');" style="width:30px;height:30px;float:left;position:relative;top:15px;left:15px;"/>
+			</div>
+			<div id="screen" >
+				<marquee style="position:fixed;z-index:10;">
+					<div style='width:72px;height:74px;font-size:70px;color:#FFFF44;'>π</div>
+				</marquee>
+				
+				<button id="expression">_</button><br />
+				<button id="result">0</button><br />
+			</div>
+			<div id="science">
+				<button class="key" style="">asin</button>
+				<button class="key" style="">acos</button>
+				<button class="key" id="atan" style="">atan</button>
+				<button class="key">(x,y)</button>
+				<button class="key" id="ln">ln</button>
+				<br />
+				<br />
+				<button class="key">sin</button>
+				<button class="key">cos</button>
+				<button class="key">tan</button>
+				<button class="key">π</button>
+				<button class="key">e</button>
+				<br />
+				<br />
+				<button class="key">rdn</button>
+				<button class="key">^</button>
+				<button class="key">√</button>
+				<button class="key">(&nbsp;)</button>
+				<button class="key">n!</button>
+			</div> 
+			<div id="adult" style="display:none;">
+				<button id="time" >时间</button>
+				<button id="time" >今天</button>
+				<button id="bmi" >BMI</button>
+				<br />
+				<br />
+				<button id="text" class="key">税</button>
+				<button id="deposite" class="key">存</button>
+				<button id="loan" class="key">贷</button>
+				<button class="key">%</button>
+				<button class="key">,</button>
+			</div>
+			<div id="child" style="display:none;">
+				<button class="key" style="padding:4px;">关弹幕</button>
+				<button class="key" style="padding:4px;">收手掌</button>
+				<button class="key" style="padding:4px;">换背景</button> 
+				<button class="key" style="padding:4px;">帮助</button>
+			</div>
+			<div id="common">
+				<button class="key">7</button>
+				<button class="key">8</button>
+				<button class="key">9</button>
+				<button class="key">DEL</button>
+				<button class="key">AC</button>
+				<br />
+				<button class="key">4</button>
+				<button class="key">5</button>
+				<button class="key">6</button>
+				<button class="key">*</button>
+				<button class="key">/</button>
+				<br />
+
+				<button class="key">1</button>
+				<button class="key">2</button>
+				<button class="key">3</button>
+				<button class="key">+</button>
+				<button class="key">-</button>
+				<br />
+
+				<button class="key">0</button>
+				<button class="key">.</button>
+				<button class="key" id="forchd">10^</button>
+				<button class="key">Ans</button>
+				<button class="key">=</button>
+				<br />
+				<br />
+			</div>
+
+			
+		</div>
+		<marquee style="color:red;font-size:20px;">666666666666</marquee>
+		<marquee>
+			<div style='width:72px;height:174px;font-size:128px;color:#FFFF44;'>π</div>
+		</marquee>
+	</div>
+	<style>
+		img{
+			width:100px;
+			height:100px;
+			vertical-align:top;
+			display:inline-block;
+
+		}
+		span{
+			position: relative;
+			z-index:2;
+		}
+		.draggable{
+			display:inline-block;
+		}
+		#hands{
+			width:100%;height:200px;
+		}
+		.draggable img{
+			width:200px;
+			height:200px;
+		}
+	</style>
+	<!--movable pics-->
+	<div class="draggable">
+		<img src="img/clh.png" />
+	</div>
+	<div  class="draggable">
+		<img src="img/crh.png" />
+	</div>
+</body>
+</html>
