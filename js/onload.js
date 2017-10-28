@@ -4,7 +4,8 @@
 			$('#science').show('slow');
 			$('#adult').hide('slow');
 			$('#child').hide('slow');
-			$('#hands').hide('slow');
+			//$('#hands').hide('slow');			
+			$( ".draggable" ).css('display','none');//！
 			$('#forchd').get(0).innerHTML='10^';
 			$('body').css('background-image','url("img/bj_xingkong.jpg")');
 			$('#calbody').css('background-color','rgba(0,0,0,0.4)');
@@ -16,7 +17,8 @@
 			$('#science').hide('slow');
 			$('#adult').show('slow');
 			$('#child').hide('slow');
-			$('#hands').hide('slow');
+			//$('#hands').hide('slow');
+			$( ".draggable" ).css('display','none');//！
 			$('#forchd').get(0).innerHTML='10^';
 			$('body').css('background-image','url("img/bj_family.jpg")');
 			$('#calbody').css('background-color','rgba(0,0,0,0.8)');
